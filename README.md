@@ -1,8 +1,9 @@
-LaTeX text/code for the report in CDT403 course
-===============================================
+LaTeX text/code for the self evaluation report in DVA425 course
+===============================================================
 
 ### About this report
-Report in the course CDT403 - Research Methods at Mälardalens University in Sweden. This paper will be about threat models and how peer-to-peer communication can help in certain circumstances where centralised systems are down.
+Self evaluation report in the course DVA425 - Advanced project in embedded
+systems at Mälardalens University in Sweden.
 
 ### How to generate PDF in Ubuntu 12.04
 
