@@ -1,0 +1,62 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+
+\documentclass[11pt,a4paper]{amsart}
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{fancyhdr}
+\usepackage[pdfborder={0 0 0},colorlinks=true, urlcolor=blue, citecolor=red, bookmarks=false]{hyperref}
+
+	% Page style
+	\pagestyle{fancy}
+
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+
+\title{Self evaluation in CDT508/DVA410}
+\author{NN}
+
+\date{}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+\thispagestyle{fancy}
+\fancyhead[R]{Electronics/mechanics/.., Vasa/Void}
+\fancyhead[L]{\today, NN}
+\section{Introduction}
+The report should be typeset with \LaTeX !
+The requirements that are set for the different grades are:
+\begin{description}
+\item[Grade 3] Be there and do a good job
+\item[Grade 4] Be there and take initiatives to fulfill the goals
+\item[Grade 5] Be there, take initiatives to fulfill the goals and suggest (close to research) new approaches
+\end{description}
+
+\section{My contribution during this period}
+Be clear on this work reflects on the grading criteria, i.e reading scientific papers~\cite{Ekstrom20011845221} or technical reports~\cite{thruster}
+\section{How has my work contributed to the project}
+
+\section{Related work[optional]}
+Other work that supports the validity of my contribution~\cite{Ekstrom20011845221}.\\
+
+\section{Suggested grade \& motivation}
+
+
+\begin{thebibliography}{99}
+\bibitem{Ekstrom20011845221}{{Ekstr{\"o}m, M. and Hartmann, O. and Karlsson, E. and Lidstr{\"o}m, E. and Granberg, P. and Nygren, M.}, {Physical Review B - Condensed Matter and Materials Physics}, \textbf{Vol. 64 nr. 18, 2001},\textit{Antiferromagnetism in {Zn-doped La$_2$CuO$_4$} as observed by muon spin resonance spectroscopy}}
+\bibitem{thruster}
+Optimal Thruster Configuration for Omni-directional Underwater Vehicles - \url{http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=724320}
+\end{thebibliography}
+
+
+%\subsection{}
+
+
+
+\end{document}  
