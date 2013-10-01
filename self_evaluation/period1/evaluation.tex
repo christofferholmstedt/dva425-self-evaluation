@@ -44,7 +44,7 @@ suggestion was discarded due to time constraints.
 
 \subsection{Infrastructure}
 Following the first literature review period my main focus has been on setting
-up infrastructure such as WLAN, build server and webserver. During this time
+up infrastructure such as WLAN, build server and web server.
 I have also registered the domain naiad.se. Priority has been
 on documenting this process and making it as open as possible so others can do
 the same thing with limited experience.
@@ -54,7 +54,7 @@ Per-Erik wrote the main part for the build script while I set up the Jenkins
 CI server, Apache2 http server, syncing between Github, local build server and our web
 server.
 
-\subsection{State of the Art - Second time}
+\subsection{State of the Art - more responsibility}
 After the project leaders recieved the first feedback from our State of the Art
 draft I was given responsibility of choosing mainboard as well as reading up on
 Space Plug-and-Play Avionics (SPA).
@@ -66,14 +66,24 @@ system. During the initial State of the Art work everyone assumed that
 Raspberry PI was the best choice. Though after a few days I came to the
 conclusion that the BeagleBone Black was a better choice for our project.
 The BeagleBone Black is open hardware so will hopefully be much easier to
-interact with than if we would have chosen the Raspberry PI.
+interact with than if we would have gone with the Raspberry PI.
+
+\subsubsection{Space plug-and-play Avionics and CAN bus}
+Space plug-and-play avionics was the last responsbility I got, others had briefly
+looked in to it. Implementing Space plug-and-play avionics
+over the CAN bus might show some difficulties. The first problem to solve is
+the assignment of message IDs used within the CAN bus network for each connected
+node. The CAN bus specification says that this should be pre-defined but with
+SPA it most likely have to be decided by some kind of "network master". As of
+writing this self evaluation, reading up on SPA and CAN bus is ongoing.
 
 \section{Related work}
 \subsection{Documentation}
-With my experience from earlier written reports I've been able to help Daniel
+With my experience from earlier reports and LaTeX I've been able to help Daniel
 quite a lot with documentation issues such as the choice of LaTeX template
 (ACM template used), fixing bibliography errors and helping
-others with LaTeX.
+others with LaTeX. I've also helped out with suggesting on how to organise
+future documentation.
 
 \subsection{Git and Github}
 With over 18 people working on the same project I suggested a move to Git and
@@ -86,3 +96,17 @@ and software. This will probably change a little during the development cycle
 when everyone starts to write code.
 
 \section{Suggested grade \& motivation}
+Suggested grade 5.
+
+I've contributed with my knowledge in research methods, report writing and LaTeX
+which have made the state of the art writing process run smooth. When it comes to
+content in high-level architecture and mission control I've suggested
+different solutions which are the current state of the art in research.
+
+With regard to the infrastructure; the web server, build server and code repositories
+are set up in such a way that it will be easy to maintain and keep up to date
+throughout the project. The use of continous integration to check for regressions
+will help the project keep the codebase buildable and detect bugs early on.
+
+Continued research on the Space plug-and-play avionics system will hopefully give
+the project a solution that makes the system easy to assembly.
