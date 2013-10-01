@@ -1,18 +1,88 @@
 \section{Introduction}
-The report should be typeset with \LaTeX !
-The requirements that are set for the different grades are:
-\begin{description}
-\item[Grade 3] Be there and do a good job
-\item[Grade 4] Be there and take initiatives to fulfill the goals
-\item[Grade 5] Be there, take initiatives to fulfill the goals and suggest (close to research) new approaches
-\end{description}
+This report is a self evaluation during project "Naiad" in the course
+"DVA425 - Project in Advanced Embedded Systems" at M\"{a}lardalens University.
+This self evaluation consists of the first 5 weeks of the project.
+
+My main work is in the Software group.
+% The report should be typeset with \LaTeX !
+% The requirements that are set for the different grades are:
+% \begin{description}
+% \item[Grade 3] Be there and do a good job
+% \item[Grade 4] Be there and take initiatives to fulfill the goals
+% \item[Grade 5] Be there, take initiatives to fulfill the goals and suggest (close to research) new approaches
+% \end{description}
 
 \section{My contribution during this period}
-Be clear on this work reflects on the gradi
-\section{How has my work contributed to the project}
-asdf 
+\subsection{State of the Art}
+For the State of the Art document I was responsible for the High-level
+architecture and Mission Control (as subparts of the Mission Control System).
+For both topics a few good papers were found
+\cite{palomeras2012,palomeras2011,martinez2008,martinez2013}.
+Especially the Ph.D. Dissertation from Palomeras \cite{palomeras2011}.
 
-\section{Related work[optional]}
-Other work that supports the validity of my contribution~\cite{web:otillo}.\\
+\subsubsection{High-level Architecture}
+From the literature review I've given the suggestion to try out
+Real-time Container Component Model (RT-CCM),
+Lightweight CORBA Component Model (LwCCM) and
+Component Oriented Layer-based Architecture for Autonomy (COLA2) and see if
+these already available component-based models meet our
+customer requirement on a component based implementation.
+
+\subsubsection{Mission Control}
+For the Mission Control my suggestion is to first create a simple domain
+specific language in XML or basic scripts for faster prototyping. A simple
+GUI could also be created to speed up the process of creating different missions.
+To make the system more fault tolerant in the long run the mission control part
+should be structured with well defined primitives (defined by Palomeras
+\cite{palomeras2011}) and may use Petri Nets for this.
+
+\subsubsection{Research Methodology}
+During the writing of the "State of the Art" document I suggested a structured
+research methodology (a systematical literature review) on how to find the relevant
+papers for our different topics. Though after a few discussions this
+suggestion was discarded due to time constraints.
+
+\subsection{Infrastructure}
+Following the first literature review period my main focus has been on setting
+up infrastructure such as WLAN, build server and webserver. During this time
+I have also registered the domain naiad.se. Priority has been
+on documenting this process and making it as open as possible so others can do
+the same thing with limited experience.
+A limiting factor has been the lack of public ip address which has
+made the infrastructure quite a lot more complex than first anticipated.
+Per-Erik wrote the main part for the build script while I set up the Jenkins
+CI server, Apache2 http server, syncing between Github, local build server and our web
+server.
+
+\subsection{State of the Art - Second time}
+After the project leaders recieved the first feedback from our State of the Art
+draft I was given responsibility of choosing mainboard as well as reading up on
+Space Plug-and-Play Avionics (SPA).
+
+\subsubsection{Mainboard}
+From the beginning the goal for the project was a distributed system with a
+small credit card sized computer as mainboard instead of a powerful mini-ITX
+system. During the initial State of the Art work everyone assumed that
+Raspberry PI was the best choice. Though after a few days I came to the
+conclusion that the BeagleBone Black was a better choice for our project.
+The BeagleBone Black is open hardware so will hopefully be much easier to
+interact with than if we would have chosen the Raspberry PI.
+
+\section{Related work}
+\subsection{Documentation}
+With my experience from earlier written reports I've been able to help Daniel
+quite a lot with documentation issues such as the choice of LaTeX template
+(ACM template used), fixing bibliography errors and helping
+others with LaTeX.
+
+\subsection{Git and Github}
+With over 18 people working on the same project I suggested a move to Git and
+Github as version control system for all of our code. Git makes merging
+different branches easier and Github gives a visual presentation of our
+repositories. Another benefit of Github is that it's a social network for
+developers which may make it easier for other developers to get in contact
+with our project. At the moment there is one repository for hardware, electronics
+and software. This will probably change a little during the development cycle
+when everyone starts to write code.
 
 \section{Suggested grade \& motivation}
