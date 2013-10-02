@@ -1,7 +1,7 @@
 \section{Introduction}
 This report is a self evaluation during project "Naiad" in the course
 "DVA425 - Project in Advanced Embedded Systems" at M\"{a}lardalens University.
-This self evaluation consists of the first 5 weeks of the project.
+This self evaluation looks back on the first 5 weeks of the project.
 
 I'm a member of the software group.
 % The report should be typeset with \LaTeX !
@@ -14,7 +14,7 @@ I'm a member of the software group.
 
 \section{My contribution during this period}
 \subsection{State of the Art}
-For the State of the Art document I was responsible for the High-level
+For the State of the Art research I was responsible for the High-level
 architecture and Mission Control (as subparts of the Mission Control System).
 For both topics a few good papers were found
 \cite{palomeras2012,palomeras2011,martinez2008,martinez2013}.
@@ -32,7 +32,7 @@ customer requirement on a component based implementation.
 For the Mission Control my suggestion is to first create a simple domain
 specific language in XML or basic scripts for faster prototyping. A simple
 GUI could also be created to speed up the process of creating different missions.
-To make the system more fault tolerant in the long run the mission control part
+To make the system more fault tolerant the mission control part
 should be structured with well defined primitives (defined by Palomeras
 \cite{palomeras2011}) and may use Petri Nets for this.
 
@@ -73,8 +73,8 @@ Space plug-and-play avionics was the last responsbility I got, others had briefl
 looked in to it. Implementing Space plug-and-play avionics
 over the CAN bus might show some difficulties. The first problem to solve is
 the assignment of message IDs used within the CAN bus network for each connected
-node. The CAN bus specification says that this should be pre-defined but with
-SPA it most likely have to be decided by some kind of "network master". As of
+node. The CAN bus specification \cite{web:canspec} says that this should be pre-defined but with
+SPA it most likely have to be decided by some kind of "SPA Manager (SM-x)". As of
 writing this self evaluation, reading up on SPA and CAN bus is ongoing. The
 outcome of this will most likely change priorities on what to work on when it
 comes to the "High-level Architecture".
