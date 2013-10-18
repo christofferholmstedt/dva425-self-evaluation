@@ -1,0 +1,66 @@
+\section{Introduction}
+This report is a self evaluation during project "Naiad" in the course
+"DVA425 - Project in Advanced Embedded Systems" at M\"{a}lardalens University.
+This self evaluation looks back on week 5 to 10 of the project.
+
+I'm a member of the software group.
+% The report should be typeset with \LaTeX !
+% The requirements that are set for the different grades are:
+% \begin{description}
+% \item[Grade 3] Be there and do a good job
+% \item[Grade 4] Be there and take initiatives to fulfill the goals
+% \item[Grade 5] Be there, take initiatives to fulfill the goals and suggest (close to research) new approaches
+% \end{description}
+
+\section{My contribution during this period}
+% \subsubsection{Mission Control}
+% For the Mission Control my suggestion is to first create a simple domain
+% specific language in XML or basic scripts for faster prototyping. A simple
+% GUI could also be created to speed up the process of creating different missions.
+% To make the system more fault tolerant the mission control part
+% should be structured with well defined primitives (defined by Palomeras
+% \cite{palomeras2011}) and may use Petri Nets for this.
+
+\subsection{Virtual Network Protocol}
+With external help I was able to go forward with Space plug-and-play avionics.
+As most of that is under american export regulations a new initiative has been
+taken to create a public standard that is called Virtual Network Protocol (VNP)
+around the same principles.
+
+The contribution made during this part of the project has been focused on
+solving the Address Resolution (ARP) issues with the CAN Bus as well as creating a minimal implementation
+in Ada.
+
+% Space plug-and-play avionics was the last responsbility I got, others had briefly
+% looked in to it. Implementing Space plug-and-play avionics
+% over the CAN bus might show some difficulties. The first problem to solve is
+% the assignment of message IDs used within the CAN bus network for each connected
+% node. The CAN bus specification \cite{web:canspec} says that this should be pre-defined but with
+% SPA it most likely have to be decided by some kind of "SPA Manager (SM-x)". As of
+% writing this self evaluation, reading up on SPA and CAN bus is ongoing. The
+% outcome of this will most likely change priorities on what to work on when it
+% comes to the "High-level Architecture".
+
+\section{Related work}
+\subsection{Documentation}
+Early on in this period I created a template in LaTeX for our final report that everyone can
+use. All subparts within the project such as the Mission Control System,
+Navigation and so forth will be in their own report with abstract, introduction,
+conclusions etc. The complete Naiad report will then be a merge of all the PDF files.
+This structure will in the end make it easy for the reader to read the
+specific part she is interested in.
+
+\subsection{Infrastructure}
+After some reorganisation of the code early on in the period the build scripts
+have had to be updated. TODO
+
+\subsection{Git and Github}
+Continued to help other project members with Git and Github problems.
+
+\subsection{Mainboard}
+The BeagleBone Blacks for the Mission Control System and Sensor Fusion part
+has arrived and Ubuntu has been installed on them as well as testing of GNAT
+for ARM.
+
+\section{Suggested grade \& motivation}
+Suggested grade TODO XXX.

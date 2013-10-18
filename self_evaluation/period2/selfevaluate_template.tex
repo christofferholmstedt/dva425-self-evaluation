@@ -1,0 +1,49 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+
+\documentclass[11pt,a4paper]{amsart}
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{fancyhdr}
+\usepackage[pdfborder={0 0 0},colorlinks=true, urlcolor=blue, citecolor=red, bookmarks=false]{hyperref}
+
+	% Page style
+	\pagestyle{fancy}
+
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+
+\title{Self evaluation in DVA425}
+\author{Christoffer Holmstedt}
+
+\date{}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+\thispagestyle{fancy}
+\fancyhead[R]{Software}
+\fancyhead[L]{\today, Christoffer Holmstedt}
+
+\input{evaluation}
+
+
+\bibliographystyle{abbrv}
+\bibliography{selfevaluate_template}  % sigproc.bib is the name of the Bibliography in this case
+% \begin{thebibliography}{99}
+% \bibitem{Ekstrom20011845221}{{Ekstr{\"o}m, M. and Hartmann, O. and Karlsson, E. and Lidstr{\"o}m, E. and Granberg, P. and Nygren, M.}, {Physical Review B - Condensed Matter and Materials Physics}, \textbf{Vol. 64 nr. 18, 2001},\textit{Antiferromagnetism in {Zn-doped La$_2$CuO$_4$} as observed by muon spin resonance spectroscopy}}
+% \bibitem{thruster}
+% Optimal Thruster Configuration for Omni-directional Underwater Vehicles - \url{http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=724320}
+% \end{thebibliography}
+
+
+%\subsection{}
+
+
+
+\end{document}  
