@@ -31,6 +31,17 @@ The contribution made during this part of the project has been focused on
 solving the Address Resolution (ARP) issues with the CAN Bus as well as creating a minimal implementation
 in Ada.
 
+\subsection{Using tasks with Ada and Ravenscar}
+As a part of the Virtual Network Protocol implementation I was challenged with
+the problem about how to properly create a main loop for the applications that
+will run on the BeagleBone Blacks. All applications will listen on at least one
+network (socket) as well as doing work while waiting for new input so the applications
+can't just wait for network events.
+
+I looked into this problem and decided upon using tasks in Ada as well as keeping
+an eye on the restrictions Ravenscar has on tasks in Ada. Sources used during
+this process was "Extending Ravenscar with CSP Channels" \cite{atiya2005}, TODO
+more sources.
 % Space plug-and-play avionics was the last responsbility I got, others had briefly
 % looked in to it. Implementing Space plug-and-play avionics
 % over the CAN bus might show some difficulties. The first problem to solve is
