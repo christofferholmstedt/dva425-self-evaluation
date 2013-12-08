@@ -16,19 +16,52 @@ I'm a member of the software group.
 % Started implementation with VNP...last period?...avr-ada build server.
 % Implement support for at90can128 in AVR-Ada
 
-\subsection{Virtual Network Protocol}
+\subsection{Requirements list}
+This period started with helping Simon mapping requirements to
+design/implementation. I contributed with the template file for LibreOffice
+Calc.
 
-\subsection{Using tasks with Ada and Ravenscar}
+\subsection{Space plug-and-play Avionics and IP over CAN}
+Complete drafts of respective final report are done.
+
+\subsection{Cross-compilation of Ada against 8-bit AVR}
+All code that has been written and tested on the 8-bit AVR has been written in
+Windows with Adacore Libre 2012. This code has not used and tagged types or
+similiar advanced features in Ada. The motion control system has been
+written and tested on amd64 without first checking what works on the AVR
+architecture.
+
+During this period I focused on trying to get the free and open-source
+"AVR-Ada" to work on Ubuntu. This included compilation of gnu compiler
+collection (gcc) 4.7 native (amd64 host) and then compiling gcc so it can cross
+compile for AVR. In the end it was concluded that neither Adacore Libre 2012
+nor AVR-Ada have wanted support for tagged types.
+
+Implemented partial support for the AT90CAN128 in AVR-Ada project. This include
+Timer0, Timer1 and UART1. \cite{web:sf_avr_ada}
+
+\subsection{Reinstalled build server and Jenkins}
+Reinstalled build server to compile with AVR-Ada instead of Adacore Libre.
+Reinstalled jenkins and rewrote most part of the build script used.
 
 \section{Related work}
+
+\subsection{Design of Mission Control System}
+Participated in the discussions on how to design the Mission Control System as
+well as what communication should take place between Mission Control System and
+Vision Systems.
+
+\subsection{GtkAda}
+I helped out trying to get GtkAda to work. Tested out different versions from
+Debian package library and Adacore.
 
 \subsection{Git and Github}
 Continued to help other project members with Git and Github problems.
 
-Git and Windows ...255 character path not allowed. Unicode can be enabled but
-windows explorer in windows 7 doesn't support that so no benefit from changing
-that. Main culprit in the end was the AUnit default namin convention for test
-files which triples the original name.
+% Git and Windows ...255 character path not allowed. Unicode can be enabled but
+% windows explorer in windows 7 doesn't support that so no benefit from changing
+% that. Main culprit in the end was the AUnit default namin convention for test
+% files which triples the original name.
 
 \section{Suggested grade \& motivation}
-Suggested grade X.\cite{*}
+Suggested grade X.
